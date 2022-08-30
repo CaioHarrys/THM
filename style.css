@@ -1,0 +1,9 @@
+:root {
+    --font-family-one: juniper-std, sans-serif;
+    --font-family-two: prenton-condensed, sans-serif;
+    --font-family-three: prenton, sans-serif;
+    --font-family-four: 'Inter', sans-serif;
+
+    --font-color-one: black;
+    --font-color-two: white;
+}

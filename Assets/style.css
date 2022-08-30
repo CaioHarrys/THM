@@ -1,0 +1,209 @@
+/*FONT*/
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@300;400;500&family=Playfair+Display+SC&display=swap');
+
+/*ROOT*/
+body {
+    background-color: transparent !important;
+}
+
+:root {
+    /*FONT TYPES*/
+    --font-family-one: Playfair Display SC, serif;
+    --font-family-two: Mukta, sans-serif;
+
+    --font-size-1: 3em;
+    --font-size-2: 2em;
+    --font-size-3: 1em;
+
+}
+
+hr {
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+p {
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+/*TEXTO*/
+.title {
+    font-family: var(--font-family-one);
+    font-size: var(--font-size-1);
+    color: #181D26;
+}
+
+.para {
+    font-family: var(--font-family-two);
+    font-size: var(--font-size-3);
+    color: #3F4859;
+}
+
+.pricetag {
+    font-size: 1.4em;
+}
+
+/*NAVBARES*/
+.navbar-brand>img {
+    width: 100px;
+}
+
+.nav-item {
+    width: 100%;
+    display: flex;
+}
+
+.nav-item>img {
+    width: 120px;
+}
+
+.navbar-nav {
+    display: flex;
+    align-content: center;
+    align-items: center;
+}
+
+.navbar-brand {
+    display: flex;
+    justify-content: center;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    height: auto;
+}
+
+/*MAIN CONTENT*/
+html {
+    background: url(./IMGS/BG/pexels-karolina-grabowska-4198143.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.card-body {
+    flex: 1 1 auto;
+    padding: var(--bs-card-spacer-y) var(--bs-card-spacer-x);
+    color: var(--bs-card-color);
+    position: relative;
+    height: min-content;
+}
+
+.card-img,
+.card-img-top {
+    border-top-left-radius: var(--bs-card-inner-border-radius);
+    border-top-right-radius: var(--bs-card-inner-border-radius);
+    position: relative;
+}
+
+.card {
+    height: -80% !important;
+    border: 0px solid transparent !important;
+    box-sizing: border-box;
+    padding-top: 8em !important;
+    background: rgba(255, 255, 255, 0.550) !important;
+    background: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(6.5px);
+    -webkit-backdrop-filter: blur(6.5px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    transition: background 0.3s ease-in-out;
+}
+
+.card:hover {
+    background: rgba(246, 172, 24, 0.979) !important;
+}
+
+.card:hover>.card-body {
+    color: white;
+}
+
+.cardis-texts {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    font-family: var(--font-family-two);
+    font-size: var(--font-size-3);
+    transition: color 0.3s ease-in-out;
+
+}
+
+.prices {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-family: var(--font-family-two);
+    font-size: var(--font-size-3);
+    align-items: baseline;
+}
+
+.col>img {
+    position: relative;
+}
+
+.img-cardis {
+    display: flex;
+    padding: 0px;
+    margin: 0px;
+    top: -110px;
+    position: absolute;
+}
+
+.img-cardis>img {
+    width: 110%;
+    padding: 0 !important;
+    margin: 0 !important;
+
+}
+
+/*CARD BUTTON*/
+.butn-2>img {
+    width: 23px;
+}
+
+.butn-2{
+    padding: 0 !important;
+    width: 33px;
+    height: 33px;
+    border-radius: 5px;
+    background: rgba(233, 230, 227, 0.735);
+    box-shadow:  20px 20px 60px #d97b1f,
+                 -20px -20px 60px #ffa729;
+    transition: background 0.3s ease-in-out;
+}
+
+button {
+    border: 0px solid transparent !important;
+}
+/*RESPONSIVE*/
+/*XTRA SMALL*/
+@media (min-width: 319px) and (max-width:575.98px) {
+    .card{
+        margin-bottom: 2em;
+    }
+}
+/*SMALL*/
+@media (min-width: 576.98px) and (max-width:768.98px) {
+    .card{
+        margin-bottom: 3em;
+    }
+}
+/*MEDIUM*/
+@media (min-width: 769px) and (max-width:991.98px) {
+    .card{
+        margin-bottom: 5em;
+    }
+    .img-cardis>img{
+        width: 105%;
+    }
+}
+/*LARGE*/
+@media (min-width: 992.98px) and (max-width:1200px) {
+    .img-cardis>img{
+        width: 129%;
+    }
+}
