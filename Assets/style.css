@@ -184,6 +184,7 @@ button {
 @media (min-width: 319px) and (max-width:575.98px) {
     .card{
         margin-bottom: 2em;
+        margin-top:4em;
     }
     .img-cardis{
         width: 70%;
